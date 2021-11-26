@@ -12,6 +12,9 @@ while (count < 10) {
     ask = parseInt(prompt('inserisci un numero: '));
     acc += ask;
     count+=1;
+    console.log(ask)
 }
 
-console.log(count,acc,ask);
+console.log(acc);
+const div = document.querySelector('.container');
+div.append('la somma dei numeri inseriti è: ',acc);
