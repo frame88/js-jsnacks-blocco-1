@@ -11,20 +11,20 @@ let i = invitati.length;
 let count = 0;
 let find = false;
 
-while (count < i) {
+while (count < i ) {
     if (who == invitati[count]) {
         console.log('sei il benveuto, puoi procedere');
         find = true;
-        break;
     }    
     count+=1;
 }    
+
 const div = document.querySelector('.container');
 div.classList.add('bg-dark','text-light','text-center','pt-5','pb-5');
+
 if (find == true) {
     div.append('sei il benveuto, puoi procedere');
 }
-
 else {
     div.append('accesso negato');
 }
