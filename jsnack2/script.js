@@ -20,7 +20,7 @@ while (count < i) {
     count+=1;
 }    
 const div = document.querySelector('.container');
-
+div.classList.add('bg-dark','text-light','text-center','pt-5','pb-5');
 if (find == true) {
     div.append('sei il benveuto, puoi procedere');
 }
