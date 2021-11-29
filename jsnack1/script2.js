@@ -4,17 +4,12 @@ Il software deve chiedere per 10 volte all’utente di inserire un numero.
 Il programma stampa la somma di tutti i numeri inseriti.
 */
 
-let count = 0;
-let acc = 0;
-let ask = 0;
-
-while (count < 3) {
+acc = 0;
+for (let i = 0; i < 3; i++) {
     ask = parseInt(prompt('inserisci un numero: '));
     acc += ask;
-    count+=1;
-    console.log(ask)
 }
 
 console.log(acc);
-const div = document.querySelector('.container');
-div.append('la somma dei numeri inseriti è: ', acc);
+const diva = document.querySelector('.secondoex');
+diva.append('la somma dei numeri inseriti è: ', acc);
